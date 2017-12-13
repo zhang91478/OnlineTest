@@ -1,0 +1,14 @@
+.formDiv{
+    position: absolute;
+    left: 200px;
+    right: 200px;
+    background: #fff6e4;
+    width: 1000px;
+}
+
+.stemDiv{
+    background: #20ff8c;
+}
+.optionDiv{
+    background: #b8ffd0;
+}

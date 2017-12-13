@@ -1,0 +1,32 @@
+.loginDiv{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:600px;
+    height:200px;
+    margin-left: -150px;
+    margin-top: -100px;
+    border:1px solid #888;
+    background-color:#edf;
+    text-align:center;
+}
+.loginForm{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:250px;
+    height:100px;
+    margin-left: -125px;
+    margin-top: -50px;
+    text-align: center;
+}
+.loginButton{
+    width: 150px;
+
+
+}
+.loginInput{
+    width: 180px;
+    text-align: left;
+    margin-bottom: 5px;
+}

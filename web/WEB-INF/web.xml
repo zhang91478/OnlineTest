@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>/index.html</welcome-file>
+    </welcome-file-list>
+
+    <filter>
+        <filter-name>decodeFilter</filter-name>
+        <filter-class>cn.xu419.filter.DecodeFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>decodeFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>userLogin</servlet-name>
+        <servlet-class>cn.xu419.controller.UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userLogin</servlet-name>
+        <url-pattern>/app/userLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateRadio</servlet-name>
+        <servlet-class>cn.xu419.controller.UpdateRadioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateRadio</servlet-name>
+        <url-pattern>/app/updateRadio</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>updateUser</servlet-name>
+        <servlet-class>cn.xu419.controller.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateUser</servlet-name>
+        <url-pattern>/app/updateUser</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>delUser</servlet-name>
+        <servlet-class>cn.xu419.controller.DelUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delUser</servlet-name>
+        <url-pattern>/app/delUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delRadio</servlet-name>
+        <servlet-class>cn.xu419.controller.DelRadioServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delRadio</servlet-name>
+        <url-pattern>/app/delRadio</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>checkResult</servlet-name>
+        <servlet-class>cn.xu419.controller.ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>checkResult</servlet-name>
+        <url-pattern>/app/checkResult</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addUser</servlet-name>
+        <servlet-class>cn.xu419.controller.UserAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addUser</servlet-name>
+        <url-pattern>/app/addUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>adminLogin</servlet-name>
+        <servlet-class>cn.xu419.controller.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminLogin</servlet-name>
+        <url-pattern>/app/adminLogin</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>addRadio</servlet-name>
+        <servlet-class>cn.xu419.controller.RadioAddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addRadio</servlet-name>
+        <url-pattern>/app/addRadio</url-pattern>
+    </servlet-mapping>
+
+    <!--以下是jsp-->
+
+    <servlet>
+        <servlet-name>updateRadio_jsp</servlet-name>
+        <jsp-file>/WEB-INF/pages/admin/updateRadio.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateRadio_jsp</servlet-name>
+        <url-pattern>/OnlineTest/updateRadio</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>updateUser_jsp</servlet-name>
+        <jsp-file>/WEB-INF/pages/admin/updateUser.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateUser_jsp</servlet-name>
+        <url-pattern>/OnlineTest/updateUser</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>addUser_jsp</servlet-name>
+        <jsp-file>/WEB-INF/pages/admin/addUser.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addUser_jsp</servlet-name>
+        <url-pattern>/OnlineTest/addUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>manage_jsp</servlet-name>
+    <jsp-file>/WEB-INF/pages/admin/manage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>manage_jsp</servlet-name>
+        <url-pattern>/OnlineTest/manage</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addRadio_jsp</servlet-name>
+        <jsp-file>/WEB-INF/pages/admin/addRadio.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addRadio_jsp</servlet-name>
+        <url-pattern>/OnlineTest/addRadio</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>question_jsp</servlet-name>
+        <jsp-file>/WEB-INF/pages/user/question.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>question_jsp</servlet-name>
+        <url-pattern>/OnlineTest/question</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>result_jsp</servlet-name>
+    <jsp-file>/WEB-INF/pages/user/result.jsp</jsp-file>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>result_jsp</servlet-name>
+        <url-pattern>/OnlineTest/result</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showRadio_jsp</servlet-name>
+        <jsp-file>/WEB-INF/pages/admin/showRadio.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showRadio_jsp</servlet-name>
+        <url-pattern>/OnlineTest/showRadio</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showUser_jsp</servlet-name>
+        <jsp-file>/WEB-INF/pages/admin/showUser.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showUser_jsp</servlet-name>
+        <url-pattern>/OnlineTest/showUser</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
+

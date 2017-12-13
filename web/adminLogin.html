@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="/js/checkLogin.js"></script>
+    <meta charset="UTF-8">
+    <title>管理员</title>
+</head>
+<body background="img/bg.jpg">
+    <div class="loginDiv">
+        <form action="app/adminLogin" method="post" class="loginForm" id="form" onsubmit="return ckeckLogin('form')">
+            <span>账户</span>
+            <input class="loginInput" type="text" name="account" title="请输入您的账户"/><br/>
+            <span>密码</span>
+            <input class="loginInput" type="password" name="password" title="请输入您的密码"/><br/>
+            <button type="submit" class="loginButton">登陆</button><br/>
+            <a href="index.html">返回用户登陆</a>
+        </form>
+    </div>
+</body>
+</html>
